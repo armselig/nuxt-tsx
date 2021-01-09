@@ -1,16 +1,32 @@
+import * as pkg from './package.json'
+
+const site = {
+  title: pkg.name || '❗ title missing',
+  description: pkg.description || '❗  description missing',
+  author: pkg.author || '',
+  url: pkg.homepage || '',
+  lang: 'de_DE',
+}
+
 export default {
   // Target (https://go.nuxtjs.dev/config-target)
   target: 'static',
 
   // Global page headers (https://go.nuxtjs.dev/config-head)
   head: {
-    title: 'nuxt-tsx',
+    htmlAttrs: { lang: site.lang },
+    title: site.title,
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: '' },
+      { hid: 'description', name: 'description', content: site.description },
+      { hid: 'author', name: 'author', content: site.author },
+      { hid: 'robots', name: 'robots', content: 'noindex nofollow' },
     ],
-    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
+    link: [
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      { rel: 'canonical', href: site.url },
+    ],
   },
 
   // Global CSS (https://go.nuxtjs.dev/config-css)
