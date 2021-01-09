@@ -1,7 +1,7 @@
 {
   "name": "nuxt-tsx",
   "description": "Nuxt.js template with TypeScript and JSX",
-  "author": "Hendrik Neumann <henne@armselig.net> (https://hendrik.koeln/",
+  "author": "Hendrik Neumann <henne@armselig.net> (https://hendrik.koeln/)",
   "version": "0.0.1",
   "license": "MIT",
   "repository": "github:armselig/nuxt-tsx",
