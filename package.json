@@ -2,9 +2,10 @@
   "name": "nuxt-tsx",
   "description": "Nuxt.js template with TypeScript and JSX",
   "author": "Hendrik Neumann <henne@armselig.net> (https://hendrik.koeln/)",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "license": "MIT",
   "repository": "github:armselig/nuxt-tsx",
+  "homepage": "https://github.com/armselig/nuxt-tsx/#README",
   "private": true,
   "scripts": {
     "dev": "nuxt-ts",
@@ -18,7 +19,8 @@
   "dependencies": {
     "@nuxt/typescript-runtime": "^2.0.0",
     "core-js": "^3.6.5",
-    "nuxt": "^2.14.6"
+    "nuxt": "^2.14.6",
+    "nuxt-property-decorator": "^2.9.1"
   },
   "devDependencies": {
     "@nuxt/types": "^2.14.6",
