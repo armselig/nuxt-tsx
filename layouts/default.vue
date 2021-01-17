@@ -1,16 +1,18 @@
 <template>
-  <div class="page container mx-auto">
+  <div class="container mx-auto">
     <Header />
     <main>
       <Nuxt />
     </main>
+    <Footer />
   </div>
 </template>
 
 <script lang="ts">
-import Header from '@/components/organisms/Header'
+import Footer from '@/components/organisms/Footer.vue'
+import Header from '@/components/organisms/Header.vue'
 
 export default {
-  components: { Header },
+  components: { Footer, Header },
 }
 </script>

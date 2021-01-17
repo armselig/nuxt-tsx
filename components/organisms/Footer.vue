@@ -1,7 +1,5 @@
 <template>
-  <header>
-    <p>{{ this.$data.site.title }}</p>
-  </header>
+  <footer>&copy; {{ this.$data.site.author }}</footer>
 </template>
 
 <script lang="ts">
@@ -15,7 +13,7 @@ import { site } from '~/nuxt.config'
     }
   },
 })
-export default class Header extends Vue {
+export default class Footer extends Vue {
   mounted() {
     this.$data.site = site
   }
