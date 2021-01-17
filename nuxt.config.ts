@@ -1,6 +1,6 @@
 import * as pkg from './package.json'
 
-export const site = {
+export const site: Types.ISiteData = {
   title: pkg.name || '❗ title missing',
   description: pkg.description || '❗  description missing',
   author: pkg.author || '',
@@ -52,5 +52,9 @@ export default {
   modules: [],
 
   // Build Configuration (https://go.nuxtjs.dev/config-build)
-  build: {},
+  build: {
+    babel: {
+      presets: ['@nuxt/babel-preset-app'],
+    },
+  },
 }

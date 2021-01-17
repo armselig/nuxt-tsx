@@ -18,11 +18,12 @@
   },
   "dependencies": {
     "@nuxt/typescript-runtime": "^2.0.0",
-    "core-js": "^3.6.5",
+    "core-js": "^2.6.12",
     "nuxt": "^2.14.6",
     "nuxt-property-decorator": "^2.9.1"
   },
   "devDependencies": {
+    "@nuxt/babel-preset-app": "^2.14.12",
     "@nuxt/types": "^2.14.6",
     "@nuxt/typescript-build": "^2.0.3",
     "@nuxtjs/eslint-config": "^3.1.0",
