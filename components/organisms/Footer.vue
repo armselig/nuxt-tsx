@@ -1,5 +1,5 @@
 <template>
-  <footer>&copy; {{ this.$data.site.author }}</footer>
+  <footer class="text-center">&copy; {{ this.$data.site.author }}</footer>
 </template>
 
 <script lang="ts">

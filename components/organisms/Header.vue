@@ -1,6 +1,6 @@
 <template>
   <header>
-    <p>{{ this.$data.site.title }}</p>
+    <p class="text-sm text-uppercase">{{ this.$data.site.title }}</p>
   </header>
 </template>
 
