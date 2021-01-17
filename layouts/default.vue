@@ -1,7 +1,16 @@
 <template>
   <div class="page container mx-auto">
-    <main class="page__main">
+    <Header />
+    <main>
       <Nuxt />
     </main>
   </div>
 </template>
+
+<script lang="ts">
+import Header from '@/components/organisms/Header'
+
+export default {
+  components: { Header },
+}
+</script>

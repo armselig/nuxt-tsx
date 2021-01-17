@@ -1,6 +1,6 @@
 import * as pkg from './package.json'
 
-const site = {
+export const site = {
   title: pkg.name || '❗ title missing',
   description: pkg.description || '❗  description missing',
   author: pkg.author || '',
