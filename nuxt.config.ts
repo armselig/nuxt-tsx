@@ -59,4 +59,7 @@ export default {
       presets: ['@nuxt/babel-preset-app'],
     },
   },
+  storybook: {
+    // Docs: https://storybook.nuxtjs.org/
+  },
 }
