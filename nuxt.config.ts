@@ -10,8 +10,8 @@ export const site: Types.ISiteData = {
 
 export default {
   // Target (https://go.nuxtjs.dev/config-target)
-  mode: 'universal',
   target: 'static',
+  ssr: false,
 
   // Global page headers (https://go.nuxtjs.dev/config-head)
   head: {
@@ -56,7 +56,17 @@ export default {
   // Build Configuration (https://go.nuxtjs.dev/config-build)
   build: {
     babel: {
-      presets: ['@nuxt/babel-preset-app'],
+      presets() {
+        return [
+          [
+            '@nuxt/babel-preset-app',
+            {
+              // Fix version mismatch between NuxtJS and Storybook <https://github.com/storybookjs/storybook/issues/6204#issuecomment-572491973>
+              corejs: { version: 3 },
+            },
+          ],
+        ]
+      },
     },
   },
   storybook: {

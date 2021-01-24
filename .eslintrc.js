@@ -14,7 +14,7 @@ module.exports = {
   plugins: ['prettier', 'eslint-plugin-tsdoc'],
   // add your custom rules here
   rules: {
-    '@typescript-eslint/no-unused-vars-experimental': true,
+    '@typescript-eslint/no-unused-vars-experimental': 1,
     'tsdoc/syntax': 'warn',
   },
 }
