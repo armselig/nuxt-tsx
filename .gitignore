@@ -89,3 +89,7 @@ sw.*
 
 # Vim swap files
 *.swp
+
+# @nuxtjs/storybook
+.nuxt-storybook
+storybook-static
