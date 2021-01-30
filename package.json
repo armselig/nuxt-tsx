@@ -14,7 +14,8 @@
     "generate": "nuxt-ts generate",
     "lint:js": "eslint --ext .js,.vue --ignore-path .gitignore .",
     "lint:style": "stylelint **/*.{vue,css} --ignore-path .gitignore",
-    "lint": "npm run lint:js && npm run lint:style"
+    "lint": "npm run lint:js && npm run lint:style",
+    "commit": "cz"
   },
   "dependencies": {
     "@nuxt/typescript-runtime": "^2.0.0",
@@ -34,11 +35,13 @@
     "@tailwindcss/postcss7-compat": "^2.0.2",
     "autoprefixer": "^9.8.6",
     "babel-eslint": "^10.1.0",
+    "commitizen": "^4.2.3",
+    "cz-conventional-changelog": "^3.3.0",
     "eslint": "^7.10.0",
     "eslint-config-prettier": "^6.12.0",
     "eslint-plugin-nuxt": "^1.0.0",
     "eslint-plugin-prettier": "^3.1.4",
-    "git-cz": "^4.7.6",
+    "eslint-plugin-tsdoc": "^0.2.11",
     "postcss": "^7.0.35",
     "prettier": "^2.1.2",
     "sass": "^1.30.0",
@@ -57,7 +60,7 @@
   ],
   "config": {
     "commitizen": {
-      "path": "git-cz"
+      "path": "./node_modules/cz-conventional-changelog"
     }
   }
 }
