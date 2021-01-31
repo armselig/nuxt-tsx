@@ -44,7 +44,7 @@
     "eslint-plugin-tsdoc": "^0.2.11",
     "postcss": "^7.0.35",
     "prettier": "^2.1.2",
-    "sass": "^1.30.0",
+    "sass": "^1.32.5",
     "sass-loader": "^10.1.0",
     "stylelint": "^13.7.2",
     "stylelint-config-prettier": "^8.0.2",
