@@ -56,7 +56,17 @@ export default {
   // Build Configuration (https://go.nuxtjs.dev/config-build)
   build: {
     babel: {
-      presets: ['@nuxt/babel-preset-app'],
+      presets() {
+        return [
+          [
+            '@nuxt/babel-preset-app',
+            {
+              // Fix version mismatch between NuxtJS and Storybook <https://github.com/storybookjs/storybook/issues/6204#issuecomment-572491973>
+              corejs: { version: 3 },
+            },
+          ],
+        ]
+      },
     },
   },
 }
